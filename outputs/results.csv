@@ -1,0 +1,18 @@
+experiment,family,feature_count,validation_ap,validation_roc_auc,validation_brier,runtime_sec,test_ap,test_roc_auc,test_recall,test_precision,test_f1,test_macro_f1,test_brier,test_cost,threshold,test_review_rate
+baseline_Dummy,Dummy,28,0.22116666666666668,0.5,0.17225197530864197,0.06081414222717285,,,,,,,,,,
+baseline_Logistic Regression,Logistic Regression,28,0.5382390443530003,0.7677142383952708,0.1825529709989412,0.18371272087097168,,,,,,,,,,
+baseline_Random Forest,Random Forest,28,0.5514935167643223,0.7811415157155918,0.17441924938630604,0.3325963020324707,,,,,,,,,,
+robust_standard,Random Forest,28,0.5525707751075271,,0.1761306271878409,0.19365334510803223,,,,,,,,,,
+robust_robust,Random Forest,28,0.5465649109792077,,0.17623762188785466,0.20625019073486328,,,,,,,,,,
+robust_yeojohnson_robust,Random Forest,28,0.5468334084653114,,0.1762095820728262,0.40161561965942383,,,,,,,,,,
+GA_comparison_All features,Random Forest,28,0.5514935167643223,0.7811415157155918,0.17441924938630604,0.3477334976196289,,,,,,,,,,
+GA_comparison_GA rerun with sensitive,Random Forest,8,0.5389858663290744,0.767643363541556,0.18302570123288173,0.15198683738708496,,,,,,,,,,
+GA_comparison_GA rerun without sensitive,Random Forest,10,0.5371668130913752,0.7668942993879606,0.1813106920415048,0.16905665397644043,,,,,,,,,,
+GA_comparison_GA reported subset (Seed 11),Random Forest,9,0.5399888010544034,0.7696173773852936,0.17940001388201252,0.1872270107269287,,,,,,,,,,
+GA_with_sensitive_seed_11,Genetic Algorithm + Logistic Regression,14,0.5369723777281097,,,7.134702205657959,,,,,,,,,,
+GA_with_sensitive_seed_22,Genetic Algorithm + Logistic Regression,8,0.5369799643376235,,,5.5379438400268555,,,,,,,,,,
+GA_with_sensitive_seed_33,Genetic Algorithm + Logistic Regression,13,0.5368694038649072,,,5.810802936553955,,,,,,,,,,
+GA_without_sensitive_seed_11,Genetic Algorithm + Logistic Regression,12,0.5333275044248501,,,4.373668432235718,,,,,,,,,,
+GA_without_sensitive_seed_22,Genetic Algorithm + Logistic Regression,10,0.5356994202580445,,,4.8970067501068115,,,,,,,,,,
+GA_without_sensitive_seed_33,Genetic Algorithm + Logistic Regression,8,0.5346067052277412,,,4.189441680908203,,,,,,,,,,
+tuned_calibrated_rf,Random Forest + calibration,28,0.5565824441452916,0.7819270251864557,0.1351365046004215,18.343821048736572,0.553213397789832,0.7791108987463617,0.7663903541823662,0.35923701872129987,0.48917748917748916,0.6091641080164416,0.1359077139868153,3364.0,0.14500000000000002,0.4718333333333333

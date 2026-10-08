@@ -1,0 +1,7 @@
+scenario,seed_a,seed_b,jaccard
+with_sensitive,11,22,0.375
+with_sensitive,11,33,0.6875
+with_sensitive,22,33,0.4
+without_sensitive,11,22,0.375
+without_sensitive,11,33,0.42857142857142855
+without_sensitive,22,33,0.38461538461538464

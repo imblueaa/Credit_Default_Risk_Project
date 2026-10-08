@@ -1,0 +1,3 @@
+split,n,share,default_rate
+Train pool,24000,0.8,0.22120833333333334
+Test,6000,0.2,0.22116666666666668
